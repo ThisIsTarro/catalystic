@@ -10,6 +10,13 @@
     {% include head-custom.html %}
   </head>
   <body>
+    <style>
+p:has(a[href^="mailto:"]) 
+{ 
+  text-align:center;
+}
+      
+</style>
     <div class="container-lg px-3 my-5 markdown-body">
       {{ content }}
 
